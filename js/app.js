@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
-  $(".limit").on("click", function () {
-    $(this).css("display", "none");
+  $(".limit-button").on("click", function () {
+    $('.limit').css("display", "none");
     $(".repeat").css("display", "none");
     $("form").append(`<input class="datetime-local" type="datetime-local">`);
     $(".datetime-local").insertBefore(".begin");
     $(".begin").css("display", "flex");
   });
-  $(".repeat").on("click", function () {
-    $(this).css("display", "none");
+  $(".repeat-button").on("click", function () {
+    $('.repeat').css("display", "none");
     $(".limit").css("display", "none");
     $("form").append(`<input class="text" type="text" placeholder="Please type the number of days to countdown.">`);
     $(".text").insertBefore(".begin");
