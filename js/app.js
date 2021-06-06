@@ -10,7 +10,7 @@ $(document).ready(function () {
   $(".repeat").on("click", function () {
     $(this).css("display", "none");
     $(".limit").css("display", "none");
-    $("form").append(`<input class="text" type="text">`);
+    $("form").append(`<input class="text" type="text" placeholder="Please type the number of days to countdown.">`);
     $(".text").insertBefore(".begin");
     $(".begin").css("display", "flex");
   });
